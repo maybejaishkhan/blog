@@ -1,0 +1,64 @@
+site_name: Jaish's Blog
+site_description: This is my personal blog with useful thing I have learned over the years.
+site_url: http://www.example.com
+
+theme:
+  name: material
+
+  icon:
+    logo: fontawesome/solid/j
+
+  font: 
+    text: Inter
+    code: JetBrains Mono
+
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: black
+      accent: cyan
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  extra:
+    social:
+      - icon: /fontawesome/regular/envelope
+        name: Send me an email.
+        link: mailto:jaishkhan771@gmail.com
+      - icon: /fontawesome/brands/facebook
+        name: Facebook
+        link: https://facebook.com
+      - icon: /material/github
+        name: GitHub
+        link: https://github.com/maybejaishkhan
+      - icon: /fontawesome/brands/gitlab
+        name: GitLab
+        link: https://gitlab.com/maybejaishkhan
+
+
+  features:
+    - header.autohide
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.footer
+    - navigation.tabs
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.path
+    - navigation.indexes
+    - navigation.top
+
+copyright: Copyright &copy; 2025 Jaish Khan
+
+plugins:
+  - search
+  - blog
