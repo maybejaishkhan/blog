@@ -1,17 +1,17 @@
-# Welcome to MkDocs
+---
+hide:
+    - navigation
+    - toc
+---
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# Overview
 
-## Commands
+This is a tech-related blog that aims to provide knowledge and insights from a Computing perspective.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Who am I?
 
-## Project layout
+I'm an IT Engineer, who has dabbled all over the **vast** landscape of computing. My main focus has been the "DevOps" way of doing things by continuously deploying and integrating ongoing stuff as seamlessly as possible.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Leave me a message on [jaishkhan771@gmail.com](mailto:jaishkhan771@gmail.com) or
+
+### **Follow me on** [:fontawesome-brands-github:]() [:fontawesome-brands-gitlab:]() :fontawesome-brands-linkedin: :fontawesome-brands-facebook: :fontawesome-brands-instagram: :fontawesome-brands-discord: :fontawesome-brands-reddit: :fontawesome-brands-tumblr:

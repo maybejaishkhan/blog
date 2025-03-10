@@ -1,64 +1,151 @@
 site_name: Jaish's Blog
-site_description: This is my personal blog with useful thing I have learned over the years.
-site_url: http://www.example.com
+site_url: https://maybejaishkhan.github.io/blog
+site_author: Muhammad Jaish Khan
+site_description: 'Insights, tutorials, and news on educational technology'
 
 theme:
   name: material
-
-  icon:
-    logo: fontawesome/solid/j
-
-  font: 
+  language: en
+  logo: fontawesome/solid/j
+  favicon: fontawesome/solid/j
+  palette:
+    - scheme: default
+      primary: blue
+      accent: light-blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - scheme: slate
+      primary: blue
+      accent: light-blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  font:
     text: Inter
     code: JetBrains Mono
-
-  palette:
-    # Palette toggle for light mode
-    - scheme: default
-      primary: black
-      accent: indigo
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
-    - scheme: slate
-      primary: black
-      accent: cyan
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to light mode
-  extra:
-    social:
-      - icon: /fontawesome/regular/envelope
-        name: Send me an email.
-        link: mailto:jaishkhan771@gmail.com
-      - icon: /fontawesome/brands/facebook
-        name: Facebook
-        link: https://facebook.com
-      - icon: /material/github
-        name: GitHub
-        link: https://github.com/maybejaishkhan
-      - icon: /fontawesome/brands/gitlab
-        name: GitLab
-        link: https://gitlab.com/maybejaishkhan
-
-
   features:
-    - header.autohide
-    - search.suggest
-    - search.highlight
-    - search.share
-    - navigation.footer
     - navigation.tabs
-    - navigation.instant
-    - navigation.instant.progress
-    - navigation.path
-    - navigation.indexes
     - navigation.top
+    - search.highlight
+    - header.autohide
 
-copyright: Copyright &copy; 2025 Jaish Khan
+# markdown_extensions:
+#   - admonition
+#   - toc:
+#       permalink: true
+#   - footnotes
+#   - codehilite:
+#       guess_lang: false
+#   - pymdownx.betterem
+#   - pymdownx.caret
+#   - pymdownx.details
+#   - pymdownx.inlinehilite
+#   - pymdownx.magiclink
+#   - pymdownx.smartsymbols
+#   - pymdownx.superfences
+#   - pymdownx.tabbed
+#   - pymdownx.tasklist
+#   - pymdownx.arithmatex  # For math expressions if needed
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
   - search
-  - blog
+  # - awesome-pages  # Organize blog posts automatically
+  # - mkdocs_macros
+  # - redirects       # Manage URL changes smoothly
+  # - minify          # Compress assets for faster load times
+  # - sitemap         # Generate sitemap.xml for SEO
+  # - git-revision-date  # Display last updated dates on posts
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/maybejaishkhan
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/yourusername
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/yourusername
+  analytics:
+    provider: google
+    tracking_id: UA-XXXXXXXXX-X
+  meta:
+    - name: keywords
+      content: educational technology, tech blog, tutorials, coding, STEM
+    - property: og:title
+      content: Educational Tech Blog
+  manifest:
+    name: Educational Tech Blog
+    short_name: TechBlog
+    start_url: /
+    display: standalone
+    theme_color: '#2196f3'
+    background_color: '#ffffff'
+
+extra_css:
+  - css/custom.css
+  - css/blog-overrides.css
+
+extra_javascript:
+  - js/custom.js
+  - js/comments.js  # Embed third-party comment system script (e.g., Disqus or Utterances)
+
+repo_url: https://github.com/maybejaishkhan/blog
+repo_name: GitHub
+
+
+# site_name: Jaish's Blog
+# site_description: This is my personal blog with useful thing I have learned over the years.
+# site_url: http://www.example.com
+
+# theme:
+#   name: material
+
+#   icon:
+#     logo: fontawesome/solid/j
+
+#   font: 
+#     text: Inter
+#     code: JetBrains Mono
+
+#   palette:
+#     # Palette toggle for light mode
+#     - scheme: default
+#       primary: black
+#       accent: indigo
+#       toggle:
+#         icon: material/toggle-switch
+#         name: Switch to dark mode
+
+#     # Palette toggle for dark mode
+#     - scheme: slate
+#       primary: black
+#       accent: cyan
+#       toggle:
+#         icon: material/toggle-switch-off-outline
+#         name: Switch to light mode
+#   extra:
+#     generator: false
+
+
+#   features:
+#     - header.autohide
+#     - search.suggest
+#     - search.highlight
+#     - search.share
+#     - navigation.footer
+#     - navigation.tabs
+#     - navigation.instant
+#     - navigation.instant.progress
+#     - navigation.path
+#     - navigation.indexes
+#     - navigation.top
+
+# plugins:
+#   - search
+#   - blog
